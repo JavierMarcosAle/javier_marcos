@@ -1,0 +1,101 @@
+.aboutme-container{
+    margin: 0 1rem;
+}
+
+.aboutme-bar{
+    margin: 6rem 0;
+    border-left: 7px solid orange;
+    padding-left: 1rem;
+}
+
+.aboutme-title{
+    font-size: 2rem;
+}
+
+.aboutme-paragraph{
+    font-size: 1.25rem;
+}
+
+.aboutme-im{
+    
+}
+
+.aboutme-im__title{
+    font-size: 1.5rem;
+}
+
+.aboutme-im__paragraph,
+.aboutme-im__data{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.aboutme-im__paragraph{
+    line-height: 1.5;
+}
+
+.aboutme-im__data{
+    
+}
+
+.aboutme-im__data span{
+    font-weight: bold;
+    display: inline-block;
+    width: 25%;   
+}
+
+.aboutme-im__buttons{
+    margin-top: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutme-im__buttons button{
+    display: inline-block;
+    border: none;
+    width: 150px;
+    padding: 1em 0;
+    font-size: 1rem;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px){
+    .aboutme-im__data-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .aboutme-im__data{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .aboutme-im-container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    
+    .aboutme-im{
+        width: 60%;
+        align-self: flex-end;
+    }
+    .aboutme-im::before{
+        content: '';
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 30%;
+        height: 70%;
+        background-image: url(../img/perfil.jpg);
+        background-size: cover;
+        box-shadow: 15px 15px 7px hsl(50,0%,50%);
+        
+    }
+}

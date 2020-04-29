@@ -1,0 +1,84 @@
+.quote-container{
+    margin-top: 3rem;
+    width: 100%;
+    height: 60%;
+    background-image: url(../img/escribir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.quote-container::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: .75;
+    z-index: 10;
+    
+}
+
+.quote-items{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    transition: transform 3s;
+    animation: mover 9s infinite alternate;
+}
+
+
+
+@keyframes mover{
+    0%,30%{
+        transform: translateX(0%);
+    }
+    35%,63%{
+        transform: translateX(-33%);
+    }
+    68%,100%{
+        transform: translateX(-66%);
+    }
+    
+}
+
+.quote-description{
+    width: 100%;
+    text-align: center;
+/*    cursor: e-resize;*/
+}
+
+/*
+.quote-description:active{
+    cursor: grab;
+}
+*/
+
+.quote-icon{
+    font-size: 40px;
+    color: orange;
+}
+
+.quote-paragraph,
+.quote-autor{
+    color: white;
+    margin-top: 2rem;
+    user-select: none;
+    
+}
+
+.quote-paragraph{
+    font-weight: bold;
+}
+
+.quote-autor{
+    font-size: 20px;
+}

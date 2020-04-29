@@ -1,0 +1,63 @@
+.service-container{
+    margin: 0 1rem;
+}
+
+.service-bar{
+    margin: 6rem 0;
+    border-left: 7px solid orange;
+    padding-left: 1rem;
+}
+
+.service-title{
+    font-size: 2rem;
+}
+
+.service-paragraph{
+    font-size: 1.25rem;
+}
+
+.service-item{
+    box-shadow: 1px 1px 20px 1px hsl(0,0%,80%);
+    padding: 2.5rem;
+    margin-top: 2rem;
+    transition: transform .5s;
+}
+
+.service-item__icon{
+    font-size: 40px;
+    color: orange;
+}
+
+.service-item__title{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-item__paragraph{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.service-item:hover{
+    transform: translateY(-7px);
+}
+
+@media screen and (min-width:768px){
+    .service-item-container{
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .service-item{
+        width: calc(50% - 1.5rem);
+    }
+    
+    .service-item:nth-child(odd){
+        margin-right: 1.5rem;
+    }
+    
+    
+}

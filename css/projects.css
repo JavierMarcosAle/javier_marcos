@@ -1,0 +1,38 @@
+.projects-container{
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item{
+    width: calc(50% - 4rem);
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+    padding: 0 2rem;
+    
+}
+
+.projects-container .project-item:nth-child(odd){
+    border-right: 1px solid black;
+}
+
+.project-item__number{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.project-item__description{
+    font-size: 15px;
+}
+
+@media screen and (min-width:768px){
+    .project-item{
+        width: calc(25%);
+    }
+    
+    .projects-container .project-item:nth-child(2){
+        border-right: 1px solid black;
+    }
+}

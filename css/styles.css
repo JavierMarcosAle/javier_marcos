@@ -1,0 +1,36 @@
+@import url(menu.css);
+@import url(banner.css);
+@import url(aboutme.css);
+@import url(abilities.css);
+@import url(services.css);
+@import url(creative.css);
+@import url(quote.css);
+@import url(projects.css);
+@import url(news.css);
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem; /*24*/
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}

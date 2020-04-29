@@ -1,0 +1,138 @@
+.news-container{
+    margin: 0 1rem;
+}
+
+.news-bar{
+    margin: 6rem 0;
+    border-left: 7px solid orange;
+    padding-left: 1rem;
+}
+
+.news-title{
+    font-size: 2rem;
+}
+
+.news-paragraph{
+    font-size: 1.25rem;
+}
+
+.news-item{
+    max-height: 100vh;
+    margin: 1rem 0;
+    background-color: antiquewhite;
+}
+
+.news-item img{
+/*    height: 400px;*/
+}
+
+.news-image{
+    
+}
+
+.news-description{
+    padding: 1rem;
+    background-color: antiquewhite;
+    
+}
+
+.news-description__date{
+    font-size: 1rem;
+    display: inline;
+}
+
+.news-description__category{
+    font-size: 1rem;
+    display: inline;
+}
+
+.news-description__category::before{
+    content: '-';
+}
+
+.news-description__title{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.news-description__paragraph{
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+    height: calc(4 * 20px);
+    overflow: hidden;
+    text-align: justify;
+
+}
+
+.vacio{
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.news-description__button{
+    display: block;
+    margin: auto;
+    border: none;
+    width: 150px;
+    padding: 1em 0;
+    font-size: 1rem;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-button{
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+
+.news-description__abrir,
+.news-description__cerrar{
+    display: none;
+}
+
+
+.icon-cerrar{
+    position: fixed;
+    right: 0;
+    top:0;
+    display: none;
+    z-index: 200;
+    cursor: pointer;
+}
+
+#abrir:checked ~ .news-item{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: auto;
+    margin: 0 -1rem 0 0;
+    
+}
+
+
+#abrir:checked ~ .news-item .news-description__paragraph{
+    overflow: visible;
+    margin-top: 1rem;
+    
+}
+#abrir:checked ~ .icon-cerrar{
+    display: block;
+}
+
+#abrir:checked ~ .news-item .news-button{
+    display: none;
+}
+
+#abrir:checked ~ .news-item .vacio{
+    display: none;
+}
+
+
